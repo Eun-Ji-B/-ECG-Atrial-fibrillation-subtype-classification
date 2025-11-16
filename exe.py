@@ -1,3 +1,4 @@
+#Tensorflow Lite 실행 코드
 import numpy as np
 import os
 from tflite_runtime.interpreter import Interpreter
@@ -112,5 +113,6 @@ for i in range(NUM_TEST_IMAGES):
         prediction, probabilities = result
         print(f"✅ 파일: {image_filename} | 예측된 숫자: **{prediction}** | 확률 (일부): {probabilities[:5]}")
         results[image_filename] = prediction
+
 
 print("\n--- 전체 추론 완료 ---")
