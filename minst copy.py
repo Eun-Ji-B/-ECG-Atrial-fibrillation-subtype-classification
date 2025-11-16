@@ -1,4 +1,4 @@
-
+# Tensorflow mnist 모델 코드
 import tensorflow as tf
 print("TensorFlow version:", tf.__version__)
 
@@ -63,6 +63,7 @@ for i in range(10):
     img = (x_test[i] * 255).astype("uint8")
     label = int(y_test[i])
     Image.fromarray(img, mode="L").save(f"sample_{label}_{i}.png")
+
 
 
 '''
