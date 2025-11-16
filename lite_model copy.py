@@ -1,3 +1,4 @@
+#Tensorflow Lite 변환
 import tensorflow as tf
 
 saved_model_dir = "C:/Users/a111a/Desktop/labcop/code/My_Model"
@@ -8,4 +9,5 @@ tflite_model = converter.convert()
 
 # Save the model.
 with open('model.tflite', 'wb') as f:
+
   f.write(tflite_model)
